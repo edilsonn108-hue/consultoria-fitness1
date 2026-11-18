@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#193656">
+<meta name="description" content="Consultoria on-line de nutrição e treino com acompanhamento individual de Edilson Franco.">
+<title>Edilson Franco | Consultoria ON-LINE</title>
+<style>
+:root{
+  color-scheme:light;
+  --lp-navy:#193656;
+  --lp-blue:#4268d5;
+  --lp-blue-deep:#2d50b0;
+  --lp-teal:#168b82;
+  --lp-teal-ink:#087067;
+  --lp-coral:#e17c66;
+  --lp-coral-ink:#9d3c2b;
+  --lp-bg:#f4f7fc;
+  --lp-paper:#ffffff;
+  --lp-text:#20354e;
+  --lp-muted:#52657e;
+  --lp-line:#dbe5f2;
+  --lp-blue-soft:#edf4ff;
+  --lp-teal-soft:#e5f6f2;
+  --lp-coral-soft:#fff0e6;
+  --lp-on-dark:#ffffff;
+  --lp-on-dark-muted:#dbe6ff;
+  --lp-danger:#943434;
+  --lp-danger-soft:#fde7e7;
+  --lp-warning:#714414;
+  --lp-warning-soft:#fff1cc;
+  --chart-series:var(--lp-blue);
+  --chart-reps:var(--lp-teal);
+  --chart-carbs:var(--lp-blue);
+  --chart-protein:var(--lp-teal);
+  --chart-fat:var(--lp-coral);
+  --chart-lean:var(--lp-teal);
+  --chart-above:var(--lp-blue);
+  --chart-below:var(--lp-coral);
+}
+
+.consultancy-plans .plan{display:flex;flex-direction:column;min-width:0;background:var(--lp-paper);padding:24px;border:1px solid var(--lp-line);border-radius:18px}
+.consultancy-plans .plan.featured{border:2px solid var(--lp-blue);background:var(--lp-blue-soft);padding:23px}
+.consultancy-plans .plan-heading{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.consultancy-plans .plan-heading h2,.consultancy-plans .plan-heading h3{font:750 21px/1.25 "DM Sans",system-ui,sans-serif;letter-spacing:-.03em;margin:0;color:var(--lp-navy)}
+.consultancy-plans .plan-duration{font-size:13px;font-weight:650;color:var(--lp-muted)}
+.consultancy-plans .plan-monthly{margin-bottom:15px}
+.consultancy-plans .plan-monthly small{display:block;font-size:12px;color:var(--lp-muted);margin-bottom:5px}
+.consultancy-plans .price{font:800 clamp(29px,3.6vw,38px)/1.15 "DM Sans",system-ui,sans-serif;color:var(--lp-blue);letter-spacing:-.04em;margin:0;display:block}
+.consultancy-plans .price span{font-size:15px;font-weight:600;letter-spacing:0;margin-left:3px}
+.consultancy-plans .plan-description{color:var(--lp-muted);font-size:14px;line-height:1.65;margin:0 0 16px}
+.consultancy-plans .plan-advantage{color:var(--lp-teal-ink);font-weight:750;font-size:13px;margin:0 0 12px}
+.consultancy-plans .plan-benefits{padding-left:18px;font-size:13px;line-height:1.85;color:var(--lp-muted);margin:0 0 16px}
+.consultancy-plans .plan-cash{font-size:13px;margin:0 0 15px;color:var(--lp-muted)}
+.consultancy-plans .plan-total{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:7px;padding-top:17px;border-top:1px solid var(--lp-line);margin-top:auto;color:var(--lp-navy);font-size:13px}
+.consultancy-plans .plan-total strong{font-size:18px}
+.consultancy-plans .plan button{margin-top:18px;min-height:44px}
+.plan-equivalent-note{color:var(--lp-muted);font-size:12px;line-height:1.6;margin:14px 0 0}
+
+
+:root{--bg:var(--lp-bg);--surface:var(--lp-paper);--line:var(--lp-line);--paper:var(--lp-paper);--text:var(--lp-text);--muted:var(--lp-muted);--lime:var(--lp-blue);--ink:var(--lp-navy);--green:var(--lp-blue)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 "DM Sans",system-ui,sans-serif}a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid var(--lp-blue);outline-offset:4px}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:75px}.site-header{border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:10px;font-weight:800;line-height:1.15}.brand small{display:block;color:var(--muted);font-size:11px;font-weight:500;margin-top:4px}.mark{display:grid;place-items:center;width:40px;height:40px;border:1px solid var(--lp-blue);border-radius:10px;color:var(--lime)}.button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border-radius:10px;font-weight:750;line-height:1.25}.primary{background:var(--lime);color:var(--lp-on-dark)}.secondary{border:1px solid var(--lp-line);color:inherit}.hero{background:radial-gradient(ellipse at 84% 30%,var(--lp-blue-soft) 0%,transparent 58%);padding:clamp(42px,8vw,104px) 0}.hero-inner{display:grid;gap:32px}.label{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--lime);margin:0 0 12px}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(40px,7vw,75px);letter-spacing:-.065em;line-height:1.02;margin-bottom:18px;max-width:12ch}h1 span{color:var(--lime)}.lead{max-width:480px;color:var(--muted);font-size:clamp(16px,2vw,19px);margin-bottom:22px}.actions{display:flex;gap:10px;flex-wrap:wrap}.examples{margin:0;display:grid;gap:12px}.examples figcaption{font-size:14px;color:var(--muted)}.chat{min-width:0;border:1px solid var(--lp-line);border-radius:16px;background:var(--lp-paper);overflow:hidden;box-shadow:0 10px 28px #080e0a55}.chat-header{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--lp-line);background:var(--lp-blue-soft)}.chat-header h2{font-size:16px;margin:0;letter-spacing:0}.avatar{display:grid;place-items:center;width:32px;height:32px;flex:none;border-radius:50%;background:var(--lp-blue-soft);color:var(--lp-navy);font-size:11px;font-weight:800}.thread{display:grid;gap:8px;padding:13px 14px}.message{margin:0;max-width:94%;padding:8px 11px;border-radius:3px 12px 12px;background:var(--lp-paper);font-size:14px;overflow-wrap:anywhere}.reply{justify-self:end;border-radius:12px 3px 12px 12px;background:var(--lp-teal-soft);color:var(--lp-navy)}.details{background:var(--paper);color:var(--ink);padding:clamp(40px,8vw,78px) 0}.details h2,.pricing h2{font-size:clamp(29px,5vw,46px);letter-spacing:-.045em;line-height:1.1;margin-bottom:22px}.includes,.plans{display:grid;gap:12px}.feature,.plan{padding:17px;border:1px solid var(--lp-line);border-radius:13px}.feature h3,.plan h3{font-size:17px;margin:0 0 5px}.feature p,.plan p{color:var(--lp-muted);margin-bottom:0}.pricing{background:var(--lp-blue-soft);color:var(--ink);padding:clamp(40px,8vw,78px) 0}.plan{background:#fff}.price{display:block;font-size:clamp(25px,4vw,34px);line-height:1.12;font-weight:850;color:var(--green);margin:8px 0}.discount{margin:15px 0 0;color:var(--lp-muted)}footer{padding:23px 0;color:var(--muted);font-size:13px}footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}footer a{text-decoration:underline;text-underline-offset:4px}@media(min-width:760px){.hero-inner{grid-template-columns:1fr minmax(320px,.88fr);align-items:center;gap:50px}.includes,.plans{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:400px){.wrap{width:calc(100% - 28px)}.nav .button{padding-inline:10px;font-size:13px}.mark{display:none}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="wrap nav">
+  <a class="brand" href="./"><span class="mark" aria-hidden="true">EF</span><span>Edilson Franco<small>Consultoria ON-LINE</small></span></a>
+  <a class="button secondary" href="https://edilson-franco-consultoria-gestao.edilson-n-108.chatgpt.site/aluno">Portal do Aluno</a>
+</div></header>
+<main>
+  <section class="hero"><div class="wrap hero-inner">
+    <div>
+      <p class="label">Nutrição e treino on-line</p>
+      <h1>Emagreça ou ganhe <span>massa muscular.</span></h1>
+      <p class="lead">Receba um plano alimentar e um treino adaptados à sua rotina. Acompanhe sua evolução e revise o plano com Edilson Franco.</p>
+      <div class="actions"><a class="button primary" href="https://edilson-franco-consultoria-gestao.edilson-n-108.chatgpt.site/aluno">Acessar meu portal</a><a class="button secondary" href="#planos">Ver planos</a></div>
+    </div>
+    <figure class="examples">
+      <figcaption>Exemplos de conversas de acompanhamento</figcaption>
+      <article class="chat">
+        <div class="chat-header"><span class="avatar" aria-hidden="true">EF</span><h2>Perda de peso</h2></div>
+        <div class="thread"><p class="message">Edilson, meu peso baixou e a calça já está mais folgada na cintura.</p><p class="message reply">Boa! Vamos comparar as medidas no próximo retorno e ver como estão sua fome e sua energia.</p></div>
+      </article>
+      <article class="chat">
+        <div class="chat-header"><span class="avatar" aria-hidden="true">EF</span><h2>Ganho de massa muscular</h2></div>
+        <div class="thread"><p class="message">Subi a carga no treino e já notei mais volume nos braços.</p><p class="message reply">Ótimo. Registre as cargas e vamos comparar as medidas na próxima avaliação.</p></div>
+      </article>
+    </figure>
+  </div></section>
+  <section class="details"><div class="wrap">
+    <h2>O que você acompanha no portal</h2>
+    <div class="includes">
+      <article class="feature"><h3>Alimentação</h3><p>Plano alimentar, porções e lista de compras.</p></article>
+      <article class="feature"><h3>Treino</h3><p>Ficha com exercícios, séries e volume por grupamento muscular.</p></article>
+      <article class="feature"><h3>Evolução</h3><p>Avaliações físicas, comparativos e questionários de acompanhamento.</p></article>
+    </div>
+  </div></section>
+  <section class="pricing" id="planos"><div class="wrap">
+    <h2>Planos da consultoria</h2>
+    <div class="plans consultancy-plans">
+      <article class="plan"><div class="plan-heading"><h3>Plano Silver</h3><span class="plan-duration">3 meses</span></div><div class="plan-monthly"><small>Equivalente mensal</small><strong class="price">R$ 133,33<span>/mês</span></strong></div><p class="plan-description">Três meses para iniciar sua rotina com nutrição, treino e acompanhamento personalizado.</p><div class="plan-total"><span>Valor total do plano</span><strong>R$ 400,00</strong></div></article><article class="plan"><div class="plan-heading"><h3>Plano Gold</h3><span class="plan-duration">6 meses</span></div><div class="plan-monthly"><small>Equivalente mensal</small><strong class="price">R$ 116,67<span>/mês</span></strong></div><p class="plan-description">Seis meses para acompanhar sua evolução e ajustar a alimentação e o treino ao longo do processo.</p><div class="plan-total"><span>Valor total do plano</span><strong>R$ 700,00</strong></div></article><article class="plan featured"><div class="plan-heading"><h3>Plano Platinum</h3><span class="plan-duration">12 meses</span></div><div class="plan-monthly"><small>Equivalente mensal</small><strong class="price">R$ 83,33<span>/mês</span></strong></div><p class="plan-description">Um ano para consolidar hábitos e evoluir com ajustes contínuos.</p><p class="plan-advantage">Melhor valor mensal</p><div class="plan-total"><span>Valor total do plano</span><strong>R$ 1.000,00</strong></div></article>
+    </div>
+    <p class="plan-equivalent-note">Equivalente mensal aproximado, calculado dividindo o valor total pela duração do plano.</p>
+    <p class="discount">10% de desconto à vista em todos os planos.</p>
+  </div></section>
+</main>
+<footer><div class="wrap"><span>Edilson Franco · Consultoria ON-LINE</span><a href="https://edilson-franco-consultoria-gestao.edilson-n-108.chatgpt.site/painel">Painel administrativo</a></div></footer>
+</body>
+</html>
