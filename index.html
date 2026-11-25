@@ -60,12 +60,15 @@
 
 
 :root{--bg:var(--lp-bg);--surface:var(--lp-paper);--line:var(--lp-line);--paper:var(--lp-paper);--text:var(--lp-text);--muted:var(--lp-muted);--lime:var(--lp-blue);--ink:var(--lp-navy);--green:var(--lp-blue)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 "DM Sans",system-ui,sans-serif}a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid var(--lp-blue);outline-offset:4px}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:75px}.site-header{border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:10px;font-weight:800;line-height:1.15}.brand small{display:block;color:var(--muted);font-size:11px;font-weight:500;margin-top:4px}.mark{display:grid;place-items:center;width:40px;height:40px;border:1px solid var(--lp-blue);border-radius:10px;color:var(--lime)}.button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border-radius:10px;font-weight:750;line-height:1.25}.primary{background:var(--lime);color:var(--lp-on-dark)}.secondary{border:1px solid var(--lp-line);color:inherit}.hero{background:radial-gradient(ellipse at 84% 30%,var(--lp-blue-soft) 0%,transparent 58%);padding:clamp(42px,8vw,104px) 0}.hero-inner{display:grid;gap:32px}.label{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--lime);margin:0 0 12px}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(40px,7vw,75px);letter-spacing:-.065em;line-height:1.02;margin-bottom:18px;max-width:12ch}h1 span{color:var(--lime)}.lead{max-width:480px;color:var(--muted);font-size:clamp(16px,2vw,19px);margin-bottom:22px}.actions{display:flex;gap:10px;flex-wrap:wrap}.examples{margin:0;display:grid;gap:12px}.examples figcaption{font-size:14px;color:var(--muted)}.chat{min-width:0;border:1px solid var(--lp-line);border-radius:16px;background:var(--lp-paper);overflow:hidden;box-shadow:0 10px 28px #080e0a55}.chat-header{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--lp-line);background:var(--lp-blue-soft)}.chat-header h2{font-size:16px;margin:0;letter-spacing:0}.avatar{display:grid;place-items:center;width:32px;height:32px;flex:none;border-radius:50%;background:var(--lp-blue-soft);color:var(--lp-navy);font-size:11px;font-weight:800}.thread{display:grid;gap:8px;padding:13px 14px}.message{margin:0;max-width:94%;padding:8px 11px;border-radius:3px 12px 12px;background:var(--lp-paper);font-size:14px;overflow-wrap:anywhere}.reply{justify-self:end;border-radius:12px 3px 12px 12px;background:var(--lp-teal-soft);color:var(--lp-navy)}.details{background:var(--paper);color:var(--ink);padding:clamp(40px,8vw,78px) 0}.details h2,.pricing h2{font-size:clamp(29px,5vw,46px);letter-spacing:-.045em;line-height:1.1;margin-bottom:22px}.includes,.plans{display:grid;gap:12px}.feature,.plan{padding:17px;border:1px solid var(--lp-line);border-radius:13px}.feature h3,.plan h3{font-size:17px;margin:0 0 5px}.feature p,.plan p{color:var(--lp-muted);margin-bottom:0}.pricing{background:var(--lp-blue-soft);color:var(--ink);padding:clamp(40px,8vw,78px) 0}.plan{background:#fff}.price{display:block;font-size:clamp(25px,4vw,34px);line-height:1.12;font-weight:850;color:var(--green);margin:8px 0}.discount{margin:15px 0 0;color:var(--lp-muted)}footer{padding:23px 0;color:var(--muted);font-size:13px}footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}footer a{text-decoration:underline;text-underline-offset:4px}@media(min-width:760px){.hero-inner{grid-template-columns:1fr minmax(320px,.88fr);align-items:center;gap:50px}.includes,.plans{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:400px){.wrap{width:calc(100% - 28px)}.nav .button{padding-inline:10px;font-size:13px}.mark{display:none}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.access-help{max-width:480px;margin:12px 0 0;color:var(--muted);font-size:14px}
+.access-help p{margin:0}
+.access-help p+p{margin-top:4px}
 </style>
 </head>
 <body>
 <header class="site-header"><div class="wrap nav">
   <a class="brand" href="./"><span class="mark" aria-hidden="true">EF</span><span>Edilson Franco<small>Consultoria ON-LINE</small></span></a>
-  <a class="button secondary" href="https://edilson-franco-consultoria-gestao.edilson-n-108.chatgpt.site/aluno">Portal do Aluno</a>
+  <a class="button secondary" href="https://edilson-franco-consultoria-gestao.edilson-n-108.chatgpt.site/aluno" aria-describedby="portal-login">Entrar no Portal do Aluno</a>
 </div></header>
 <main>
   <section class="hero"><div class="wrap hero-inner">
@@ -73,7 +76,15 @@
       <p class="label">Nutrição e treino on-line</p>
       <h1>Emagreça ou ganhe <span>massa muscular.</span></h1>
       <p class="lead">Receba um plano alimentar e um treino adaptados à sua rotina. Acompanhe sua evolução e revise o plano com Edilson Franco.</p>
-      <div class="actions"><a class="button primary" href="https://edilson-franco-consultoria-gestao.edilson-n-108.chatgpt.site/aluno">Acessar meu portal</a><a class="button secondary" href="#planos">Ver planos</a></div>
+      <div class="actions">
+        <a class="button primary" href="https://edilson-franco-consultoria-gestao.edilson-n-108.chatgpt.site/aluno" aria-describedby="portal-login">Entrar no Portal do Aluno</a>
+        <a class="button secondary" href="https://edilson-franco-consultoria-gestao.edilson-n-108.chatgpt.site/instalar">Instalar o app no celular</a>
+        <a class="button secondary" href="#planos">Ver planos</a>
+      </div>
+      <div class="access-help" id="portal-login">
+        <p>Entre com o e-mail cadastrado na consultoria e sua data de nascimento.</p>
+        <p>No seu celular pessoal, você pode marcar “Manter meu acesso por 7 dias neste aparelho”.</p>
+      </div>
     </div>
     <figure class="examples">
       <figcaption>Exemplos de conversas de acompanhamento</figcaption>
